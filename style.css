@@ -112,6 +112,7 @@ nav ul li a:hover {
 .hero {
     width: 100%;
     height: calc(100vh - 90px);
+    content: 'viewport-units-buggyfill; calc(100vh - 100px);';
     background: url(https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-size: cover;
     background-position: center;
