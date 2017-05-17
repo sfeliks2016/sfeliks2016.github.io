@@ -5,6 +5,7 @@
 * {
     box-sizing: border-box;
     margin:0;
+    padding: 0;
 }
 
 .container {
@@ -18,58 +19,21 @@
 	content:"";
 	display: table ;
 	clear: both;
- }
-
-/*  właściwości dla wszystkich kolumn */
-
-[class*="col-"] {
-    width: 100%;
-    padding: 12px; 
-    float:left;
 }
 
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #dde3ef;
+    background-color: #dddddd;
 }
 
 header {
-    width: 100%; 
-    min-height: 50px;
     background-color: #313332;
+    width: 100%;
+    max-height: 90px; 
+    padding: 20px;
+    border-bottom: 4px solid #db5050;
 }
 
-.navbar ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    float: right;
-}
-
-.navbar ul li {
-    display: inline-block;
-}
-
-.navbar ul li a {
-    line-height: 50px;
-    padding: 0 20px;
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.navbar ul li a:hover {
-    color: #a2a2a2;
-}
-
-.navbar img {
-    padding: 10px 0;
-    float:left;
-}
-
-
-/* CLEARFIX METHOD dla nawigacji */
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -79,50 +43,100 @@ header {
     clear: both;
 }
 
+header img {
+    float: left;
+    border-radius: 5px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    float: left;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #777;
+    border-radius: 5px;
+}
+
+nav ul li:nth-of-type(2) {
+    //border-left: 1px dotted #222;
+    //border-right: 1px dotted #222;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+nav ul li a:hover {
+    color: red;
+    background-color: #999;
+    border-radius: 5px;
+}
+
+.burger-nav {
+    display: none;
+}
+
+
+/* sekction hero + nawigacja */
+
 .hero {
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 90px);
     background: url(https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-size: cover;
     background-position: center;
-    padding-top: 12vh;
+    padding-top: 8vh;
     overflow: hidden;
     text-align: center;
 }
 
 .slogan {
     background-color: rgba(255,255,255,0.5);
-    float: right;
-    max-width: 800px;
-    width: 600px;
-    padding: 20px;
+    max-width: 400px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
     color: #fff;
+    border-radius: 5px;
 }
 
-.slogan h1 {
+.slogan h3 {
     font-weight: 100;
+    
 }
 
 span {
     display: block;
     font-weight: bold;
+    font-size: 26px
 }
 
 
-
+/*  właściwości dla wszystkich kolumn */
 
 [class*="col-"]{
-    Float:left;
+    float:left;
+    width: 100%;
     min-height:1px;
-    
     padding: 16px;  
     text-align: center;
 }
-
-
-
-
-
 
 
 /* Sekcja Korzysci oraz Sekcja z nagłowkiem i tekstem */  
@@ -164,7 +178,6 @@ p {
 
 /* sekcja Galeria */
 
-
 .gallery-img-1 {
 	background-image: url(http://i.imgur.com/7Ff7rDB.jpg);	
 }
@@ -179,7 +192,7 @@ p {
 	background-image: url(http://i.imgur.com/7Ff7rDB.jpg);	
 }
  
-.gallery-image{
+.gallery-image {
 	height: 269.8px;
     background-size: cover;	
     padding: 0;
@@ -197,7 +210,7 @@ p {
     
 }
  
-.layer i {
+.gallery .layer i {
 	color: transparent;	
     font-size: 32px;
 }
@@ -273,7 +286,7 @@ p {
 .box {
 	background-color: #242423;
     background-image: url("https://www.transparenttextures.com/patterns/triangular.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .box img {
@@ -451,62 +464,31 @@ footer {
     
     .hero {
     width: 100%;
-    height:calc(100vh - 205px);
+    height:calc(100vh - 90px);
     background: url(https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     overflow: hidden;
     text-align: center;
-    padding-top: 10vh;
     }
     
     .slogan {
-    background-color: rgba(255,255,255,0.5);
-    float: none;
-    max-width: 800px;
-    width: 500px;
-    padding: 20px 0 ;
-    color: #fff;
-    position: absolute;
-    right: -100px;
-    transform: scale(0.6);
+    //transform: scale(0.6);
     }
     
-    .gallery-image{
-	height: 150px;
+    
+    .gallery-image {
+	height: 180px;
     background-size: cover;	
     padding: 0;
-    
     }
-
-    .layer {
+    
+    .gallery .layer {
 	height: 100%;
-    line-height: 150px;
+    line-height: 180px;
     }
-    
-    .layer i {
-	color: transparent;	/* ?*/
-    font-size: 8px;
-    }
-    
-    .gallery-image .layer i {
-	color: #3B5998;
-	transition: 0.3s;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10%;
-    }
-    .gallery-image:hover .layer i {
-	color: #3B5998;
-	transition: 0.3s;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10%;
-    margin: 0;
-    }
-    
-    
+     
     
     .col-gs-1 {width: 10%;}
     .col-gs-2 {width: 20%;}
@@ -636,4 +618,85 @@ footer {
 .col-offset-10 {margin-left: 83.33%}
 .col-offset-11 {margin-left: 91.66%}
 .col-offset-12 {margin-left: 100%} /* classa nr 12 nie potrzebna? */
+}
+
+
+@media screen and (max-width: 992px) {
+     .burger-nav {
+        display: block;
+        width: 50px;
+        height: 50px;
+        float: right;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        line-height:50px;
+        border-radius: 10px;
+    }
+    
+    nav i {
+        display: block;
+        width: 50px;
+        height: 50px;
+        //background: url(images/menu.png); 
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        border-radius: 5px;
+    }
+    
+    header {
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+     header nav {
+        float: none;
+        clear:left;
+        width: 100%;
+    }
+    
+    header img {
+        float: none;
+    }
+    
+    header nav ul {
+        clear: right;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    header nav ul li {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin: 10px 0;
+        text-align: left;
+        position: relative;
+    }
+    
+    nav ul li:nth-of-type(2) {
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li a {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        //transform: scale(1.4);
+    }
+    
+    nav ul.open {
+        height: auto;
+        margin-top: 16px;
+        position: relative;
+        background-color: #313332;
+        padding: 0 70px;
+    }
 }
