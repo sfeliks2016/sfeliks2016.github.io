@@ -5,12 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SFstudio</title>
         <link rel="stylesheet" href="style.css" type="text/css">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewport-units-buggyfill/0.6.1/viewport-units-buggyfill.js">
-        
+                
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	    <link rel="stylesheet" href="style.css" type="text/css">
 	    
+	    
+	    <!-- 
+  This is the base buggyfill. 
+ -->
+<script src="path/to/viewport-units-buggyfill.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewport-units-buggyfill/0.6.1/viewport-units-buggyfill.js"></script>
+<!--
+  This is the hacks plugin needed for behaviorHacks to work correctly 
+  (see below).
+ -->
+<script src="path/to/viewport-units-buggyfill.hacks.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewport-units-buggyfill/0.6.1/viewport-units-buggyfill.hacks.js"></script>
+
+<script>window.viewportUnitsBuggyfill.init({
+
+// milliseconds to delay between updates of viewport-units
+// caused by orientationchange, pageshow, resize events
+refreshDebounceWait: 250,
+
+// IE9, IE10 workaround for viewport units allowing vmin/vmax.
+behaviorHack: true,
+
+// IE9, IE10 workaround for viewport units allowing Safari for iOS <=
+// use vmax.
+contentHack: true,
+
+// provide hacks plugin to make the behaviorHack property work correctly.
+hacks: window.viewportUnitsBuggyfillHacks
+
+});
+    
+</script>
 	    
     </head>
     <body>
