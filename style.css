@@ -487,7 +487,7 @@ footer {
     overflow: hidden;
     text-align: center;
     margin: 0;
-    border: 10px solid #111;
+    border: 15px solid #111;
     }
     
     .slogan {
@@ -725,5 +725,18 @@ footer {
         position: relative;
         background-color: #313332;
         padding: 0 70px;
+    }
+    
+    .hero {
+    width: 100%;
+    height: calc(100% - 90px);
+    background: url(https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    border: 15px solid #111;
     }
 }
