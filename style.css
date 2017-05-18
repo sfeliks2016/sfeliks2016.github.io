@@ -38,6 +38,7 @@ body {
 
 body {
     background-color: #dddddd;
+    margin-top: 90px;
 }
 
 header {
@@ -46,6 +47,10 @@ header {
     max-height: 90px; 
     padding: 20px;
     border-bottom: 4px solid #db5050;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 100;
 }
 
 .clearfix:before,
@@ -718,6 +723,7 @@ footer {
     .hero {
     width: 100%;
     height: calc(100% - 90px);
+    margin-top: 90px;
     background: url(https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-size: cover;
     background-repeat: no-repeat;
