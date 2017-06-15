@@ -378,45 +378,33 @@ p {
 .about {
     background: #222; 
     color: #fff;
-    padding: 10px 100px;
-}
-.about p {
-    text-align: left;
-    font-size: 14px;
-    line-height: 160%;
-    padding: 0 20px;
-}
-
-.about .col-m-4, .about .col-s-4  {
-    text-align: left;
     padding: 0;
     margin: 0;
+    
 }
 
-.about .col-m-3, .about .col-m-9 {
-    margin: 0;
-    padding: 0;
-}
-
-
-.about h1 {
-	padding: 0 20px;
-	text-align: left;
+.about .container {
+    width: 100% !important;
+    padding: 0 5%;
 }
 
 
-.about hr {
-	float: left;
-	width: 80%;
-	margin: 20px 40px 0 0;
+
+.about .container h1 {
+    padding: 20px;
+    margin: 30px 0;
 }
+
+
+
+
 
 
 /* Social media wewnatrz Stopki */ 
  
 
 .icon-btn {
-    float:left;
+    display: inline-block;
     padding: 10px;
     margin: 10px;
     width: 40px;
@@ -558,13 +546,82 @@ footer {
         transform: scale(0.1.1);
     }
     
-    .about {
-    padding: 10px 5px;
+/* Sekcja Stopka */
+
+.about {
+    background: #222; 
+    color: #fff;
+    text-align: center;
+    padding: 40px 125px;
+}
+.about p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 160%;
+}
+
+.about .col-4 {
+    text-align: left;
+    padding: 0;
+}
+
+.about .col-3, .col-9 {
+    margin: 0;
+    padding: 0;
+}
+
+.about h1 {
+    padding: 10px 20px;
+}
+
+.about hr {
+    float:right;
+    width: 80px;
+    margin: 15px 70px 0 0;
+    
+}
+
+.about  .linia1 hr {
+    float:right;
+    width: 80px;
+    margin: 15px 115px 0 0;
+}
+
+.about p {
+    margin: 0;
+    padding: 0 20px;
+}
+    /**
+    
+    .about p {
+        text-align: center !important;
     }
     
-    .about .container {
-        width:60%;
+    .contact {
+        max-width: 250px ;
+        margin: 0 auto;
     }
+    
+    .contact ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: left;
+    }
+    
+    .contact ul li p {
+        text-align: left !important;
+    }
+    .contact ul:nth-of-type(1) {
+        padding-left: 20px;
+    }
+    
+    .contact:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    
     
     .about p {
     text-align: left;
@@ -573,8 +630,9 @@ footer {
     }
 
     .about h1 {
-    padding: 20px;
+    width: 100%;
     }
+    */
     
     footer {
     background-color: #111;
