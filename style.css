@@ -374,28 +374,42 @@ p {
 }
 
 /* Sekcja Stopka */
-
 .about {
     background: #222; 
     color: #fff;
+    //padding: 0 100px;
+}
+.about p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 160%;
+    padding: 0 20px;
+}
+
+
+.about .col-m-4, .about .col-s-4  {
+    text-align: left;
     padding: 0;
     margin: 0;
-    
 }
 
-.about .container {
-    width: 100% !important;
-    padding: 0 5%;
-}
-
-
-
-.about .container h1 {
-    padding: 20px;
-    margin: 30px 0;
+.about .col-m-3, .about .col-m-9 {
+    margin: 0;
+    padding: 0;
 }
 
 
+.about h1 {
+	padding: 0 20px;
+	text-align: left;
+}
+
+
+.about hr {
+	float: left;
+	width: 80%;
+	margin: 20px 40px 0 0;
+}
 
 
 
@@ -451,6 +465,8 @@ footer {
 }
 
 
+
+
 /* Media Queries */
 
 @media (max-width: 767px){
@@ -470,24 +486,58 @@ footer {
     float:none;
     }
     
+    .hero {
+    width: 100%;
+    height:calc(100vh - 205px);
+    background: url(https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 10vh;
+    }
     
     .slogan {
-    //transform: scale(0.6);
-    //display: none;
+    background-color: rgba(255,255,255,0.5);
+    float: none;
+    max-width: 800px;
+    width: 500px;
+    padding: 20px 0 ;
+    color: #fff;
+    position: absolute;
+    right: -100px;
+    transform: scale(0.6);
     }
     
-    
-    .gallery-image {
-	height: 180px;
+    .gallery-image{
+	height: 150px;
     background-size: cover;	
     padding: 0;
+    
+    }
+
+    .layer {
+	height: 100%;
+    line-height: 150px;
     }
     
-    .gallery .layer {
-	height: 100%;
-    line-height: 180px;
+    .layer i {
+	color: transparent;	/* ?*/
+    font-size: 8px;
     }
-     
+    
+    
+    .gallery-image:hover .layer i {
+	color: #3B5998;
+	transition: 0.3s;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10%;
+    margin: 0;
+    }
+    
+    
     
     .col-gs-1 {width: 10%;}
     .col-gs-2 {width: 20%;}
@@ -546,82 +596,13 @@ footer {
         transform: scale(0.1.1);
     }
     
-/* Sekcja Stopka */
-
-.about {
-    background: #222; 
-    color: #fff;
-    text-align: center;
-    padding: 40px 125px;
-}
-.about p {
-    text-align: left;
-    font-size: 14px;
-    line-height: 160%;
-}
-
-.about .col-4 {
-    text-align: left;
-    padding: 0;
-}
-
-.about .col-3, .col-9 {
-    margin: 0;
-    padding: 0;
-}
-
-.about h1 {
-    padding: 10px 20px;
-}
-
-.about hr {
-    float:right;
-    width: 80px;
-    margin: 15px 70px 0 0;
-    
-}
-
-.about  .linia1 hr {
-    float:right;
-    width: 80px;
-    margin: 15px 115px 0 0;
-}
-
-.about p {
-    margin: 0;
-    padding: 0 20px;
-}
-    /**
-    
-    .about p {
-        text-align: center !important;
+    .about {
+    padding: 10px 5px;
     }
     
-    .contact {
-        max-width: 250px ;
-        margin: 0 auto;
+    .about .container {
+        width:60%;
     }
-    
-    .contact ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        float: left;
-    }
-    
-    .contact ul li p {
-        text-align: left !important;
-    }
-    .contact ul:nth-of-type(1) {
-        padding-left: 20px;
-    }
-    
-    .contact:after {
-        display: block;
-        content: "";
-        clear: both;
-    }
-    
     
     .about p {
     text-align: left;
@@ -630,18 +611,8 @@ footer {
     }
 
     .about h1 {
-    width: 100%;
+    padding: 20px;
     }
-    */
-    
-    footer {
-    background-color: #111;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
 
 }
@@ -697,7 +668,6 @@ footer {
 .col-offset-11 {margin-left: 91.66%}
 .col-offset-12 {margin-left: 100%} /* classa nr 12 nie potrzebna? */
 }
-
 
 @media screen and (max-width: 992px) {
      .burger-nav {
@@ -789,6 +759,9 @@ footer {
     overflow: hidden;
     text-align: center;
     margin: 0;
-    border: 15px solid #111;
+    //border: 15px solid #111;
     }
 }
+
+ 
+
