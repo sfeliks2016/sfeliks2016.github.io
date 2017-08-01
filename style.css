@@ -505,8 +505,8 @@ footer {
     width: 500px;
     padding: 20px 0 ;
     color: #fff;
-    position: absolute;
-    right: -100px;
+    //position: absolute;
+    //right: -100px;
     transform: scale(0.6);
     }
     
